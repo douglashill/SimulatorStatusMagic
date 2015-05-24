@@ -130,10 +130,10 @@ typedef struct {
   strcpy(overrides->values.serviceString, [carrierText cStringUsingEncoding:NSUTF8StringEncoding]);
   
   // Battery
-  overrides->booloverrideItemIsEnabled[8] = 1;
-  overrides->values.boolitemIsEnabled[8] = 1;
-  overrides->overrideBatteryDetailString = 1;
-  strcpy(overrides->values.batteryDetailString, [@"100%" cStringUsingEncoding:NSUTF8StringEncoding]);
+  overrides->booloverrideItemIsEnabled[8] = 0;
+  overrides->values.boolitemIsEnabled[8] = 0;
+  overrides->overrideBatteryDetailString = 0;
+  strcpy(overrides->values.batteryDetailString, [@"" cStringUsingEncoding:NSUTF8StringEncoding]);
   
   // Bluetooth
   overrides->booloverrideItemIsEnabled[11] = self.bluetoothEnabled;
